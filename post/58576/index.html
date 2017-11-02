@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="小乐de部落格" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="根元素 &amp;lt;html&amp;gt; 表示一个HTML文档的根（顶级元素），所所以它也被称为根元素。其他所有其他元素必须是此元素的后代。日常使用不带属性。   文档元数据 &amp;lt;base&amp;gt;（不常用） 指定用于一个文档中包含的所有相对URL的基本URL。文档中只能存在一个&amp;lt;base&amp;gt;元素（只有第一个生效）。  href用于文档中相对 URL 地址的基础 URL。如果指定了该属性，这个">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML元素梳理">
+<meta property="og:url" content="http://xiaole.in/post/58576/index.html">
+<meta property="og:site_name" content="小乐de部落格">
+<meta property="og:description" content="根元素 &amp;lt;html&amp;gt; 表示一个HTML文档的根（顶级元素），所所以它也被称为根元素。其他所有其他元素必须是此元素的后代。日常使用不带属性。   文档元数据 &amp;lt;base&amp;gt;（不常用） 指定用于一个文档中包含的所有相对URL的基本URL。文档中只能存在一个&amp;lt;base&amp;gt;元素（只有第一个生效）。  href用于文档中相对 URL 地址的基础 URL。如果指定了该属性，这个">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-10-30T10:39:16.774Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML元素梳理">
+<meta name="twitter:description" content="根元素 &amp;lt;html&amp;gt; 表示一个HTML文档的根（顶级元素），所所以它也被称为根元素。其他所有其他元素必须是此元素的后代。日常使用不带属性。   文档元数据 &amp;lt;base&amp;gt;（不常用） 指定用于一个文档中包含的所有相对URL的基本URL。文档中只能存在一个&amp;lt;base&amp;gt;元素（只有第一个生效）。  href用于文档中相对 URL 地址的基础 URL。如果指定了该属性，这个">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://xiaole.in/post/58576/"/>
+
+
+
+
+
+  <title>HTML元素梳理 | 小乐de部落格</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">小乐de部落格</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-program">
+          <a href="/categories/program/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            编程
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://xiaole.in/post/58576/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小乐">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小乐de部落格">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">HTML元素梳理</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-17T00:00:00+08:00">
+                2017-10-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/program/" itemprop="url" rel="index">
+                    <span itemprop="name">program</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/program/front-end/" itemprop="url" rel="index">
+                    <span itemprop="name">front-end</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="根元素"><a href="#根元素" class="headerlink" title="根元素"></a><strong>根元素</strong></h1><hr>
+<h2 id="lt-html-gt"><a href="#lt-html-gt" class="headerlink" title="&lt;html&gt;"></a><code>&lt;html&gt;</code></h2><blockquote>
+<p>表示一个HTML文档的根（顶级元素），所所以它也被称为根元素。其他所有其他元素必须是此元素的后代。<br><strong>日常使用不带属性。</strong></p>
+</blockquote>
+<hr>
+<h1 id="文档元数据"><a href="#文档元数据" class="headerlink" title="文档元数据"></a><strong>文档元数据</strong></h1><hr>
+<h2 id="lt-base-gt-（不常用）"><a href="#lt-base-gt-（不常用）" class="headerlink" title="&lt;base&gt;（不常用）"></a><code>&lt;base&gt;</code>（不常用）</h2><blockquote>
+<p>指定用于一个文档中包含的所有相对URL的基本URL。<br><strong>文档中只能存在一个<code>&lt;base&gt;</code>元素（只有第一个生效）。</strong></p>
+<ul>
+<li><code>href</code><br>用于文档中相对 URL 地址的基础 URL。<br><strong>如果指定了该属性，这个元素必须写在其他任何属性值是 URL 的元素之前。</strong></li>
+<li><code>target</code><br>为其他元素的target属性的指定默认值。<br>在HTML4中，其值是一个框的名字或者在关键字。<br>在HTML5中，其值是一个浏览上下文（例如标签页，窗口或者内联框）的名字或者关键字。<br>以下的关键字指定特殊的意思：<ul>
+<li><code>_self</code>: <strong>默认值</strong>，在当前的Frame加载。</li>
+<li><code>_blank</code>: 在一个新的Frame（窗口）加载。</li>
+<li><code>_parent</code>: 在父级Frame加载。</li>
+<li><code>_top</code>: 在顶级Frame加载。如果没有父级Frame，该选项的行为和<code>_self</code>一样。<br><strong>如果没有父级Frame，那么<code>_parent</code>、<code>_top</code>行为和<code>_self</code>一样。</strong>  </li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="lt-head-gt"><a href="#lt-head-gt" class="headerlink" title="&lt;head&gt;"></a><code>&lt;head&gt;</code></h2><blockquote>
+<p><code>&lt;head&gt;</code>中的子元素规定文档相关的通用信息（元数据），包括文档的标题，文档的样式和脚本的链接（定义）等。<br><strong>日常使用无需属性。</strong></p>
+</blockquote>
+<hr>
+<h2 id="lt-link-gt"><a href="#lt-link-gt" class="headerlink" title="&lt;link&gt;"></a><code>&lt;link&gt;</code></h2><blockquote>
+<p>指定了外部资源与当前文档的关系. 这个元素的使用方法包括为导航定义关系框架.这个元素经常用来链接css文件。</p>
+<h2 id="属性："><a href="#属性：" class="headerlink" title="属性："></a>属性：</h2><ul>
+<li><code>charset</code><br>定义被链接资源的字符编码。</li>
+<li><code>crossorigin</code><br>该枚举属性指定在加载相关图片时是否必须使用<code>CORS</code>。</li>
+</ul>
+</blockquote>
+<hr>
+<h1 id="lt-a-gt-锚元素"><a href="#lt-a-gt-锚元素" class="headerlink" title="&lt;a&gt;锚元素"></a><code>&lt;a&gt;</code>锚元素</h1><blockquote>
+<p>（锚元素）创建一个到其他网页，文件，同一页面内的位置，电子邮件地址或任何其他URL的超链接。  </p>
+<h2 id="属性：-1"><a href="#属性：-1" class="headerlink" title="属性："></a>属性：</h2><ul>
+<li><code>download</code><br>此属性指示浏览器下载URL而不是导航到URL，将提示用户将其保存为本地文件。</li>
+<li><code>href</code><br>这是一个必需属性为锚定义一个超文本链接来源。这表示链接目标的URL或URL片段。URL片段是由一个hash符号（＃），它指定一个内部目标在当前文档中的位置（ID）开头的名字。URL不限于网页（HTTP）的文件。URL可能使用浏览器所支持的任何协议。例如，文件，FTP，大多数用户代理mailto工作。</li>
+</ul>
+</blockquote>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/post/3283/" rel="next" title="HTML属性梳理">
+                <i class="fa fa-chevron-left"></i> HTML属性梳理
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/post/26985/" rel="prev" title="学习笔记零碎">
+                学习笔记零碎 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">小乐</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
+
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          <div class="links-of-author motion-element">
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#根元素"><span class="nav-number">1.</span> <span class="nav-text">根元素</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#lt-html-gt"><span class="nav-number">1.1.</span> <span class="nav-text"><html></span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文档元数据"><span class="nav-number">2.</span> <span class="nav-text">文档元数据</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#lt-base-gt-（不常用）"><span class="nav-number">2.1.</span> <span class="nav-text"><base>（不常用）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#lt-head-gt"><span class="nav-number">2.2.</span> <span class="nav-text"><head></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#lt-link-gt"><span class="nav-number">2.3.</span> <span class="nav-text"><link></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#属性："><span class="nav-number">2.4.</span> <span class="nav-text">属性：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#lt-a-gt-锚元素"><span class="nav-number">3.</span> <span class="nav-text"><a>锚元素</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#属性：-1"><span class="nav-number">3.1.</span> <span class="nav-text">属性：</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小乐</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.3</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

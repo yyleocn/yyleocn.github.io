@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>小乐de部落格</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://xiaole.in/"/>
+  <updated>2017-10-26T11:52:07.874Z</updated>
+  <id>http://xiaole.in/</id>
+  
+  <author>
+    <name>小乐</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS布局基础</title>
+    <link href="http://xiaole.in/post/57987/"/>
+    <id>http://xiaole.in/post/57987/</id>
+    <published>2017-10-26T11:07:30.000Z</published>
+    <updated>2017-10-26T11:52:07.874Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="CSS布局基础"><a href="#CSS布局基础" class="headerlink" title="CSS布局基础"></a>CSS布局基础</h2><blockquote><p>CSS布局技术允许我们选取网页中的元素并控制他们相对于正常布局流、周边元素、父容器或者主视口/窗口的位置关系。主要布局模式有：</p><ul><li>块布局：用来布置文档。块布局包含以文档为中心的功能，例如 浮动元素或将其放置在多列上的功能。</li><li>行内布局：用来布置文本。</li><li>表格布局：用来布置表格。</li><li>定位布局：用来对那些与其他元素无交互的定位元素进行布置 。</li><li>弹性盒子布局：用来布置那些可以顺利调整大小的复杂页面。</li><li>网格布局：用来布置那些与一个固定网格相关的元素。</li></ul></blockquote><h2 id="正常布局流"><a href="#正常布局流" class="headerlink" title="正常布局流"></a>正常布局流</h2><blockquote><p>正常布局流是指在不对页面进行任何布局控制时，浏览器默认的HTML布局方式。<br>HTML元素完全按照源码中出现的先后次序显示。<br><strong>一个內联元素仅会占用由定义它的标签所包裹起来的空间，并按照自左向右、遇障换行的方式进行布局。<br>而一个块级元素将会占用其父元素（容器）的全部空间，也就是创建一个“块”。</strong></p></blockquote><h2 id="浮动布局"><a href="#浮动布局" class="headerlink" title="浮动布局"></a>浮动布局</h2><blockquote><p>浮动技术允许元素浮动到另外一个元素的左侧或右侧，而不是一个叠一个。CSS中<code>float</code>属性的主要用途是水平排列元素或让文字环绕图片。</p></blockquote><h2 id="定位布局"><a href="#定位布局" class="headerlink" title="定位布局"></a>定位布局</h2><blockquote><p>定位技术(position)允许我们将一个元素从它在页面的原始位置准确地移动到另外一个位置。有四种主要的定位类型需要我们了解：</p><ul><li><strong>static（静态定位）</strong> 默认属性<br>它表示“将元素放在文档布局流的默认位置——没有什么特殊的地方”。</li><li><strong>relative（相对定位）</strong><br>允许我们相对元素在正常的文档流中的位置移动它——包括将两个元素叠放在页面上。相对定位在对布局进行微调的时候非常有用。</li><li><strong>absolute（绝对定位）</strong><br>将元素完全从页面的正常布局流中移出，类似将它单独放在一个图层中。我们可以将元素相对页面的 <html> 元素边缘固定（或者它最近的被定位的上层元素）。绝对定位在创建复杂布局效果时非常有用，例如通过标签显示和隐藏的内容面板或者通过按钮控制滑动到屏幕中的信息面板。</html></li><li><strong>fixed（固定定位）</strong><br>与绝对定位非常类似，除了它是将一个元素相对浏览器视口固定，而不是相对另外一个元素。在创建类似页面滚动总是处于页面上方的导航菜单时非常有用。</li></ul></blockquote><h2 id="弹性盒子布局（Flexbox）"><a href="#弹性盒子布局（Flexbox）" class="headerlink" title="弹性盒子布局（Flexbox）"></a>弹性盒子布局（Flexbox）</h2><blockquote><p>长久以来，唯一可用的且有稳定的跨浏览器兼容性的能用来构建 CSS 布局的工具只有 floats 和 positioning。它们是即可行，表现也不错的布局方案，但是在某些布局方面它们就有限制，并且难以实现。以下简单的布局要求是使用<code>float</code>和<code>position</code>无法灵活实现的：</p><ul><li>垂直居中父内容的里一块内容。</li><li>使容器的所有子项占用等量的可用宽度/高度，而不管有多少宽度/高度可用。</li><li>使多列布局中的所有列采用相同的高度，即使它们包含的内容量不同。</li></ul></blockquote><h2 id="网格布局（Girds）"><a href="#网格布局（Girds）" class="headerlink" title="网格布局（Girds）"></a>网格布局（Girds）</h2><blockquote><p>网格是一个成熟的设计工具，许多现代网站布局是基于网格布局。<br>为了确保整个网站或应用程序的一致性体验，从一开始就将其置于网格系统上，这意味着不需要考虑某个元素相对于其他元素的宽度，仅限于“此元素将跨越的网格的多少列”。</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;CSS布局基础&quot;&gt;&lt;a href=&quot;#CSS布局基础&quot; class=&quot;headerlink&quot; title=&quot;CSS布局基础&quot;&gt;&lt;/a&gt;CSS布局基础&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;CSS布局技术允许我们选取网页中的元素并控制他们相对于正常布局流、周边元素
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>学习笔记零碎</title>
+    <link href="http://xiaole.in/post/26985/"/>
+    <id>http://xiaole.in/post/26985/</id>
+    <published>2017-10-17T13:13:15.000Z</published>
+    <updated>2017-10-30T10:39:21.207Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="布局思路"><a href="#布局思路" class="headerlink" title="布局思路"></a>布局思路</h3><blockquote><p>横向布局<br>纵向布局</p></blockquote><p>只有一个button且没有type时自动升级为type=”submit”</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;布局思路&quot;&gt;&lt;a href=&quot;#布局思路&quot; class=&quot;headerlink&quot; title=&quot;布局思路&quot;&gt;&lt;/a&gt;布局思路&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;横向布局&lt;br&gt;纵向布局&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;只有一个button且没有ty
+      
+    
+    </summary>
+    
+      <category term="program" scheme="http://xiaole.in/categories/program/"/>
+    
+      <category term="front-end" scheme="http://xiaole.in/categories/program/front-end/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>HTML元素梳理</title>
+    <link href="http://xiaole.in/post/58576/"/>
+    <id>http://xiaole.in/post/58576/</id>
+    <published>2017-10-16T16:00:00.000Z</published>
+    <updated>2017-10-30T10:39:16.774Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="根元素"><a href="#根元素" class="headerlink" title="根元素"></a><strong>根元素</strong></h1><hr><h2 id="lt-html-gt"><a href="#lt-html-gt" class="headerlink" title="&lt;html&gt;"></a><code>&lt;html&gt;</code></h2><blockquote><p>表示一个HTML文档的根（顶级元素），所所以它也被称为根元素。其他所有其他元素必须是此元素的后代。<br><strong>日常使用不带属性。</strong></p></blockquote><hr><h1 id="文档元数据"><a href="#文档元数据" class="headerlink" title="文档元数据"></a><strong>文档元数据</strong></h1><hr><h2 id="lt-base-gt-（不常用）"><a href="#lt-base-gt-（不常用）" class="headerlink" title="&lt;base&gt;（不常用）"></a><code>&lt;base&gt;</code>（不常用）</h2><blockquote><p>指定用于一个文档中包含的所有相对URL的基本URL。<br><strong>文档中只能存在一个<code>&lt;base&gt;</code>元素（只有第一个生效）。</strong></p><ul><li><code>href</code><br>用于文档中相对 URL 地址的基础 URL。<br><strong>如果指定了该属性，这个元素必须写在其他任何属性值是 URL 的元素之前。</strong></li><li><code>target</code><br>为其他元素的target属性的指定默认值。<br>在HTML4中，其值是一个框的名字或者在关键字。<br>在HTML5中，其值是一个浏览上下文（例如标签页，窗口或者内联框）的名字或者关键字。<br>以下的关键字指定特殊的意思：<ul><li><code>_self</code>: <strong>默认值</strong>，在当前的Frame加载。</li><li><code>_blank</code>: 在一个新的Frame（窗口）加载。</li><li><code>_parent</code>: 在父级Frame加载。</li><li><code>_top</code>: 在顶级Frame加载。如果没有父级Frame，该选项的行为和<code>_self</code>一样。<br><strong>如果没有父级Frame，那么<code>_parent</code>、<code>_top</code>行为和<code>_self</code>一样。</strong>  </li></ul></li></ul></blockquote><hr><h2 id="lt-head-gt"><a href="#lt-head-gt" class="headerlink" title="&lt;head&gt;"></a><code>&lt;head&gt;</code></h2><blockquote><p><code>&lt;head&gt;</code>中的子元素规定文档相关的通用信息（元数据），包括文档的标题，文档的样式和脚本的链接（定义）等。<br><strong>日常使用无需属性。</strong></p></blockquote><hr><h2 id="lt-link-gt"><a href="#lt-link-gt" class="headerlink" title="&lt;link&gt;"></a><code>&lt;link&gt;</code></h2><blockquote><p>指定了外部资源与当前文档的关系. 这个元素的使用方法包括为导航定义关系框架.这个元素经常用来链接css文件。</p><h2 id="属性："><a href="#属性：" class="headerlink" title="属性："></a>属性：</h2><ul><li><code>charset</code><br>定义被链接资源的字符编码。</li><li><code>crossorigin</code><br>该枚举属性指定在加载相关图片时是否必须使用<code>CORS</code>。</li></ul></blockquote><hr><h1 id="lt-a-gt-锚元素"><a href="#lt-a-gt-锚元素" class="headerlink" title="&lt;a&gt;锚元素"></a><code>&lt;a&gt;</code>锚元素</h1><blockquote><p>（锚元素）创建一个到其他网页，文件，同一页面内的位置，电子邮件地址或任何其他URL的超链接。  </p><h2 id="属性：-1"><a href="#属性：-1" class="headerlink" title="属性："></a>属性：</h2><ul><li><code>download</code><br>此属性指示浏览器下载URL而不是导航到URL，将提示用户将其保存为本地文件。</li><li><code>href</code><br>这是一个必需属性为锚定义一个超文本链接来源。这表示链接目标的URL或URL片段。URL片段是由一个hash符号（＃），它指定一个内部目标在当前文档中的位置（ID）开头的名字。URL不限于网页（HTTP）的文件。URL可能使用浏览器所支持的任何协议。例如，文件，FTP，大多数用户代理mailto工作。</li></ul></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;根元素&quot;&gt;&lt;a href=&quot;#根元素&quot; class=&quot;headerlink&quot; title=&quot;根元素&quot;&gt;&lt;/a&gt;&lt;strong&gt;根元素&lt;/strong&gt;&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;lt-html-gt&quot;&gt;&lt;a href=&quot;#lt-html-gt&quot; class
+      
+    
+    </summary>
+    
+      <category term="program" scheme="http://xiaole.in/categories/program/"/>
+    
+      <category term="front-end" scheme="http://xiaole.in/categories/program/front-end/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>HTML属性梳理</title>
+    <link href="http://xiaole.in/post/3283/"/>
+    <id>http://xiaole.in/post/3283/</id>
+    <published>2017-10-16T16:00:00.000Z</published>
+    <updated>2017-10-30T10:39:06.875Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="program" scheme="http://xiaole.in/categories/program/"/>
+    
+      <category term="front-end" scheme="http://xiaole.in/categories/program/front-end/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo搭建博客不完全指南</title>
+    <link href="http://xiaole.in/post/18368/"/>
+    <id>http://xiaole.in/post/18368/</id>
+    <published>2017-10-08T10:00:00.000Z</published>
+    <updated>2017-10-26T11:10:08.979Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2></blockquote><ul><li>安装Node并配置npm<ul><li>打开 <a href="https://nodejs.org/en/download/" target="_blank" rel="external">https://nodejs.org/en/download/</a> ，选择适合自己的版本进行下载安装。</li><li>打开CMD，对Node进行如下配置：</li><li><code>npm config set registry https://registry.npm.taobao.org/</code></li><li><code>npm config set loglevel http</code></li><li><code>npm config set progress false</code></li></ul></li><li>安装Hexo，命令如下<ul><li><code>npm install -g hexo-cli</code></li></ul></li></ul><blockquote><h2 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h2></blockquote><ul><li>在存放Blog文件夹执行<ul><li><code>hexo init myBlog</code></li><li><code>cd myBlog</code></li><li><code>npm i</code></li></ul></li><li>执行<code>hexo new first-post</code></li><li>你会看到<code>source/_posts</code>文件夹里多了一个<code>first-post.md</code>的文件，那就是你的第一篇Markdown博文，稍微修改一下吧</li><li>在命令行执行<code>hexo server</code>，打开浏览器访问 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> ，即可看到你的Blog</li></ul><blockquote><h2 id="部署Blog"><a href="#部署Blog" class="headerlink" title="部署Blog"></a>部署Blog</h2></blockquote><ul><li>在 GitHub 上新建一个空 repo，repo 名称是「<strong>你的用户名.github.io</strong>」（请将你的用户名替换成真正的用户名）</li><li>按下面几步配置Hexo的deploy<ul><li>执行<code>vim _config.yml</code></li><li>把第 6 行的<code>title</code>改成你想要的名字</li><li>把第 9 行的<code>author</code>改成你的大名</li><li>把最后一行的<code>type</code>改成<code>type: git</code></li><li>在最后一行，与<code>type</code>平齐，加上一行<code>repo: 上面repo的仓库地址</code></li><li>注意！<code>type:</code>和<code>repo:</code>后面有个空格</li></ul></li><li><code>npm install hexo-deployer-git --save</code>，安装 git 部署插件</li><li><code>hexo deploy</code></li><li>进入「<strong>你的用户名.github.io</strong>」对应的 repo，打开 GitHub Pages 功能，如果已经打开了，就直接点击预览链接</li><li>你现在应该看到了你的博客！</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;h2 id=&quot;配置环境&quot;&gt;&lt;a href=&quot;#配置环境&quot; class=&quot;headerlink&quot; title=&quot;配置环境&quot;&gt;&lt;/a&gt;配置环境&lt;/h2&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;安装Node并配置npm&lt;ul&gt;
+&lt;li&gt;打开 &lt;a hr
+      
+    
+    </summary>
+    
+      <category term="program" scheme="http://xiaole.in/categories/program/"/>
+    
+      <category term="hexo" scheme="http://xiaole.in/categories/program/hexo/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Blog启用咯</title>
+    <link href="http://xiaole.in/post/4239/"/>
+    <id>http://xiaole.in/post/4239/</id>
+    <published>2017-09-30T16:00:00.000Z</published>
+    <updated>2017-10-26T11:10:08.976Z</updated>
+    
+    <content type="html"><![CDATA[<p>新窝弄好了，撒花～</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;新窝弄好了，撒花～&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="log" scheme="http://xiaole.in/categories/log/"/>
+    
+    
+  </entry>
+  
+</feed>
